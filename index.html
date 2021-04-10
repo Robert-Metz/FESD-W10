@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container">
+    <br>
+    <h1 class="text-center">WELCOME TO THE CHORES LIST</h1>
+    <br>
+    <h1 id="content" class="text-center">Hello!</h1>
+    <br>
+    <div class="d-flex justify-content-center">
+        <button id="btn">Change/Add Value</button>
+        <button id="remove">Remove Header</button>
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Start Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">End Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-task">Chore</label>
+                        <input type="text" class="form-control" id="new-task" placeholder="Chore">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="author">Parent</label>
+                        <input type="text" class="form-control" id="author" placeholder="Parent">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="worker">Child</label>
+                        <input type="text" class="form-control" id="worker" placeholder="Child">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped d-flex justify-content-center">
+        <tr>
+            <th>Chore</th>
+            <th>Date Created</th>
+            <th>Start Date</th>
+            <th>Due Date</th>
+            <th>Parent</th>
+            <th>Child</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
